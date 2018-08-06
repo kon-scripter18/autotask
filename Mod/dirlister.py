@@ -1,9 +1,9 @@
-import os, datetime
+import os, datetime, random
 
 def run(**args):
 
-    report_name = str(datetime.datetime.now().isoformat()) + '.txt'
-    report_path = os.path.join('C:', os.sep, 'Windows', os.sep, 'System32', report_name)
+    report_name = str(random.randint(1,100000)) + '.txt'
+    report_path = os.path.join('C:\\Windows\\System32', report_name)
     print "[*] In dirlister module."
     data = os.listdir(".")
     with open(report_path, 'w') as f:
