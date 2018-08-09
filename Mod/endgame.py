@@ -1,4 +1,8 @@
 def run(**args):
+
+    global active
+
     print "[*] Abort mission!"
-    msg = "Abort!"
-    return msg, msg
+    active = False
+
+    return
