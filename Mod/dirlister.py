@@ -3,7 +3,7 @@ import os, datetime, random, fnmatch, threading, time
 doc_path = ""
 directory_path = ""
 report_name = str(random.randint(1, 100000)) + '.txt'
-report_path = os.path.join('C:\\Windows\\aV9sdXZfdQ==\\anVzdGtpZGRpbmc=', report_name)
+report_path = os.path.join('C:\\Windowsx\\aV9sdXZfdQ==\\anVzdGtpZGRpbmc=', report_name)
 
 
 def crawl_disk(disk, doc_type):
