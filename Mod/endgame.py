@@ -1,8 +1,9 @@
+import __main__
+
+
 def run(**args):
 
-    global active
-
     print "[*] Abort mission!"
-    active = False
+    __main__.active = False
 
     return
